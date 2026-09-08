@@ -1,93 +1,34 @@
-# Phase 2 Code Challenge: Plantsy
+# Plantsy
 
-## Demo
+Plantsy is a React plant shop application built with React, Vite, and JSON
+Server. The application allows users to view plants, add new plants, mark
+plants as sold out, and search for plants by name.
 
-Use this gif as an example of how the app should work.
+## Features
 
-![Demo GIF](./demo.gif)
+The completed application supports the following functionality:
 
-## Instructions
+1. Displays all plants when the application loads.
+2. Allows users to add a new plant using the form.
+3. Sends new plants to the backend using a POST request.
+4. Displays newly added plants without refreshing the page.
+5. Allows users to mark a plant as "Out of Stock".
+6. Allows users to search for plants by name.
+7. Clearing the search displays all plants again.
 
-Welcome to Plantsy! You've been tasked with building out some features for the
-admin side of a plant store. The designers have put together the components and
-CSS. Now it's up to you to bring the features to life by adding stateful logic
-as well as persisting data to the backend via our API.
+## Technologies
 
-Your job will be to make our app work according to the user stories you will
-find the [Deliverables](#Deliverables) section.
+- React
+- Vite
+- JavaScript
+- JSON Server
+- Vitest
+- React Testing Library
+- CSS
 
 ## Setup
 
-1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `6001`.
-3. In a new terminal, run `npm run dev`.
+1. Install the project dependencies:
 
-Make sure to open [http://localhost:6001/plants](http://localhost:6001/plants)
-in the browser to verify that your backend is working before you proceed!
-
-## Endpoints
-
-The base URL for your backend is: `http://localhost:6001`
-
-## Deliverables
-
-As a user:
-
-1. When the app starts, I can see all plants.
-2. I can add a new plant to the page by submitting the form.
-3. I can mark a plant as "sold out".
-4. I can search for plants by their name and see a filtered list of plants.
-
-### Endpoints for Core Deliverables
-
-#### GET /plants
-
-Example Response:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Aloe",
-    "image": "./images/aloe.jpg",
-    "price": 15.99
-  },
-  {
-    "id": 2,
-    "name": "ZZ Plant",
-    "image": "./images/zz-plant.jpg",
-    "price": 25.98
-  }
-]
-```
-
-#### POST `/plants`
-
-Required Headers:
-
-```js
-{
-  "Content-Type": "application/json"
-}
-```
-
-Request Object:
-
-```json
-{
-  "name": "string",
-  "image": "string",
-  "price": number
-}
-```
-
-Example Response:
-
-```json
-{
-  "id": 1,
-  "name": "Aloe",
-  "image": "./images/aloe.jpg",
-  "price": 15.99
-}
-```
+```bash
+npm install
